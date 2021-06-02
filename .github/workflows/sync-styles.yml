@@ -1,0 +1,25 @@
+name: Sync Styles
+on:
+  schedule:
+    - cron: '10 */12 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Sync Styles
+        uses: NinoMaruszewski/stylus-to-firemonkey@v1
+        with:
+          styles: '.github/styles.txt'
+          artifacts: true
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          add: '.'
+          default-author: github_actions
+          message: 'Sync styles'
+          push: true
+          signoff: true
