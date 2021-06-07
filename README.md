@@ -1,5 +1,5 @@
 # Stylus to Firemonkey repository template
-Here's how to set up your repository for using the [Stylus to Firemonkey](https://github.com/NinoMaruszewski/stylus-to-firemonkey) Github action. For additional configuration info see the repository.
+Here's how to set up your repository for using the [Stylus to Firemonkey](https://github.com/MrAwesomeRocks/stylus-to-firemonkey) Github action. For additional configuration info see the repository.
 
 1. Click on "Use this template" in the top right. **Make sure to select the checkbox to keep all branches.**
 2. Add style URLs to [styles.txt](./.github/styles.txt).
